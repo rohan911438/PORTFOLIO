@@ -56,7 +56,7 @@ export default function Header() {
             href="#top"
             className="font-display text-lg font-semibold tracking-tight text-ink"
           >
-            Rohan<span className="gradient-text">.</span>
+            Rohan
           </a>
 
           <nav className="hidden xl:flex items-center gap-1">
