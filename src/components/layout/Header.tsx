@@ -52,7 +52,7 @@ export default function Header() {
             Rohan<span className="gradient-text">.</span>
           </a>
 
-          <nav className="hidden lg:flex items-center gap-1">
+          <nav className="hidden xl:flex items-center gap-1">
             {navLinks.map((link) => (
               <a
                 key={link.href}
@@ -68,7 +68,7 @@ export default function Header() {
             ))}
           </nav>
 
-          <div className="hidden lg:flex items-center gap-3">
+          <div className="hidden xl:flex items-center gap-3">
             <a
               href={resumes[0].file}
               download
@@ -86,7 +86,7 @@ export default function Header() {
           </div>
 
           <button
-            className="lg:hidden text-ink p-2"
+            className="xl:hidden text-ink p-2"
             onClick={() => setOpen((v) => !v)}
             aria-label={open ? "Close menu" : "Open menu"}
             aria-expanded={open}
@@ -97,7 +97,7 @@ export default function Header() {
       </div>
 
       {open && (
-        <div className="lg:hidden bg-bg/98 backdrop-blur-md border-b border-border">
+        <div className="xl:hidden bg-bg/98 backdrop-blur-md border-b border-border">
           <nav className="flex flex-col px-5 py-4 gap-1">
             {navLinks.map((link) => (
               <a

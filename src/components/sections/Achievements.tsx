@@ -25,21 +25,38 @@ export default function Achievements() {
           ))}
         </div>
 
-        <Reveal delay={0.3} className="mt-10">
-          <div className="relative rounded-2xl border border-border-strong overflow-hidden">
-            <img
-              src="/images/community-event.png"
-              alt="Algorand Build Station Kolkata — full community turnout"
-              className="w-full max-h-96 object-cover"
-              loading="lazy"
-            />
-            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-bg/90 to-transparent p-5">
-              <p className="text-sm text-ink font-medium">
-                Algorand Build Station — Kolkata
-              </p>
+        <div className="mt-10 grid sm:grid-cols-2 gap-4 sm:gap-6">
+          <Reveal delay={0.3}>
+            <div className="relative rounded-2xl border border-border-strong overflow-hidden">
+              <img
+                src="/images/community-event.png"
+                alt="Algorand Build Station Kolkata — full community turnout"
+                className="w-full h-64 sm:h-80 object-cover"
+                loading="lazy"
+              />
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-bg/90 to-transparent p-5">
+                <p className="text-sm text-ink font-medium">
+                  Algorand Build Station — Kolkata
+                </p>
+              </div>
             </div>
-          </div>
-        </Reveal>
+          </Reveal>
+          <Reveal delay={0.36}>
+            <div className="relative rounded-2xl border border-border-strong overflow-hidden">
+              <img
+                src="/images/community-session.png"
+                alt="Rise In Web3 coding session with the developer community"
+                className="w-full h-64 sm:h-80 object-cover"
+                loading="lazy"
+              />
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-bg/90 to-transparent p-5">
+                <p className="text-sm text-ink font-medium">
+                  Rise In — Learn Web3 Coding session
+                </p>
+              </div>
+            </div>
+          </Reveal>
+        </div>
       </div>
     </section>
   );
