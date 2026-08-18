@@ -1,6 +1,7 @@
 import SectionHeading from "../ui/SectionHeading";
 import Reveal from "../ui/Reveal";
 import { achievements } from "../../data/achievements";
+import { asset } from "../../lib/asset";
 
 export default function Achievements() {
   return (
@@ -29,7 +30,7 @@ export default function Achievements() {
           <Reveal delay={0.3}>
             <div className="card-surface relative rounded-2xl border border-border-strong overflow-hidden">
               <img
-                src="/images/community-event.png"
+                src={asset("/images/community-event.png")}
                 alt="Algorand Build Station Kolkata — full community turnout"
                 className="w-full h-64 sm:h-80 object-cover"
                 loading="lazy"
@@ -44,7 +45,7 @@ export default function Achievements() {
           <Reveal delay={0.36}>
             <div className="card-surface relative rounded-2xl border border-border-strong overflow-hidden">
               <img
-                src="/images/community-session.png"
+                src={asset("/images/community-session.png")}
                 alt="Rise In Web3 coding session with the developer community"
                 className="w-full h-64 sm:h-80 object-cover"
                 loading="lazy"

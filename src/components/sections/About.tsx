@@ -1,6 +1,7 @@
 import { Code2, Users2 } from "lucide-react";
 import SectionHeading from "../ui/SectionHeading";
 import Reveal from "../ui/Reveal";
+import { asset } from "../../lib/asset";
 
 const facets = [
   {
@@ -74,7 +75,7 @@ export default function About() {
             <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-violet/15 via-transparent to-cyan/15 blur-2xl" />
             <div className="card-surface relative rounded-2xl border border-border-strong overflow-hidden bg-surface">
               <img
-                src="/images/community-group.png"
+                src={asset("/images/community-group.png")}
                 alt="Rohan Kumar with the developer community at a Web3 event"
                 className="w-full aspect-[4/3] object-cover"
                 loading="lazy"

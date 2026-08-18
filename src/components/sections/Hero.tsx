@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, MapPin, Download } from "lucide-react";
 import { resumes } from "../../data/resumes";
+import { asset } from "../../lib/asset";
 
 const taglines = [
   "Software Developer · AI Engineer · Web3 & Full Stack Developer",
@@ -141,7 +142,7 @@ export default function Hero() {
             <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-cyan/30 via-indigo/20 to-violet/30 blur-2xl" />
             <div className="card-surface relative rounded-[1.75rem] border border-border-strong bg-surface overflow-hidden">
               <img
-                src="/images/profile.png"
+                src={asset("/images/profile.png")}
                 alt="Portrait of Rohan Kumar"
                 className="w-full aspect-[4/5] object-cover"
                 loading="eager"
