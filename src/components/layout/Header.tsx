@@ -57,6 +57,7 @@ export default function Header() {
               <a
                 key={link.href}
                 href={link.href}
+                aria-current={active === link.href ? "true" : undefined}
                 className={`px-3 py-2 text-sm rounded-full transition-colors ${
                   active === link.href
                     ? "text-ink bg-white/[0.06]"

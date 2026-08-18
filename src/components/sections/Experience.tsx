@@ -26,10 +26,17 @@ export default function Experience() {
           />
 
           <Reveal delay={0.1}>
-            <div className="inline-flex rounded-full border border-border bg-surface/60 p-1">
+            <div
+              role="tablist"
+              aria-label="Experience track"
+              className="inline-flex rounded-full border border-border bg-surface/60 p-1"
+            >
               {tracks.map((t) => (
                 <button
                   key={t.id}
+                  role="tab"
+                  aria-selected={track === t.id}
+                  aria-controls={`track-panel-${t.id}`}
                   onClick={() => setTrack(t.id)}
                   className={`relative px-4 py-2 text-sm font-medium rounded-full transition-colors ${
                     track === t.id ? "text-bg" : "text-muted hover:text-ink"
@@ -57,6 +64,8 @@ export default function Experience() {
           <AnimatePresence mode="wait">
             <motion.div
               key={track}
+              id={`track-panel-${track}`}
+              role="tabpanel"
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -12 }}

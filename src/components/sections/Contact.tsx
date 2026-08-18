@@ -208,7 +208,11 @@ export default function Contact() {
                   {status === "sending" ? "Opening your email client…" : "Send Message"}
                 </button>
                 {status === "sent" && (
-                  <span className="inline-flex items-center gap-1.5 text-sm text-cyan">
+                  <span
+                    role="status"
+                    aria-live="polite"
+                    className="inline-flex items-center gap-1.5 text-sm text-cyan"
+                  >
                     <CheckCircle2 size={16} />
                     Ready to send — check your email app
                   </span>
