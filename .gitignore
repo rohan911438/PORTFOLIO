@@ -16,6 +16,9 @@ dist-ssr
 # Raw photo dump — optimized copies already live in public/images
 /Photos
 
+# Claude Code internal state
+/.claude
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
