@@ -147,12 +147,6 @@ export default function Hero() {
                 className="w-full aspect-[4/5] object-cover"
                 loading="eager"
               />
-              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-bg/95 via-bg/40 to-transparent p-5">
-                <p className="font-mono text-xs text-cyan">now building</p>
-                <p className="text-sm text-ink font-medium mt-0.5">
-                  ArbitPy — Python-to-Blockchain compiler
-                </p>
-              </div>
             </div>
           </motion.div>
         </div>

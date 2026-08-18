@@ -62,11 +62,11 @@ export default function About() {
             <Reveal delay={0.2}>
               <p className="text-muted leading-relaxed">
                 I've shipped agentic infrastructure and full-stack platforms across{" "}
-                <span className="text-ink font-medium">five different chains</span> —
-                Arbitrum, Stellar, Solana, Algorand, and Injective — and published an
-                npm SDK used across 8+ EVM networks. Whether I'm at a keyboard shipping
-                code or on stage onboarding the next cohort of builders, the goal is
-                the same: make the ecosystem easier to build in.
+                <span className="text-ink font-medium">10+ blockchain ecosystems</span> —
+                including Arbitrum, Stellar, Solana, Algorand, and Injective — and
+                published an npm SDK used across 8+ EVM networks. Whether I'm at a
+                keyboard shipping code or on stage onboarding the next cohort of
+                builders, the goal is the same: make the ecosystem easier to build in.
               </p>
             </Reveal>
           </div>

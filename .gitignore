@@ -16,6 +16,11 @@ dist-ssr
 # Raw photo dump — optimized copies already live in public/images
 /Photos
 
+# Raw resume source files — served copies live in public/resume
+/Rohan_Kumar_Technical_Resume*.docx
+/Rohan_Kumar_Technical_Resume.pdf
+/Rohan_Kumar_NonTechnical_Resume.pdf
+
 # Claude Code internal state
 /.claude
 
