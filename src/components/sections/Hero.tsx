@@ -55,7 +55,7 @@ export default function Hero() {
               Rohan Kumar
             </motion.h1>
 
-            <div className="mt-5 h-14 sm:h-8">
+            <div className="mt-5 h-16 sm:h-8">
               <AnimatePresence mode="wait">
                 <motion.p
                   key={index}

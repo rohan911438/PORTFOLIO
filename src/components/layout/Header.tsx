@@ -16,6 +16,13 @@ export default function Header() {
   }, []);
 
   useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
+
+  useEffect(() => {
     const sections = navLinks
       .map((link) => document.querySelector(link.href))
       .filter((el): el is Element => !!el);
