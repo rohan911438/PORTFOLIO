@@ -9,5 +9,4 @@ export const achievements: Achievement[] = [
   { value: "8x", label: "Hackathon wins — Flow, Arbitrum, Solana, Injective" },
   { value: "5", label: "Chains shipped on — Arbitrum, Stellar, Solana, Algorand, Injective" },
   { value: "9.44", label: "CGPA out of 10.00" },
-  { value: "Finalist", label: "Hack4Bengal 4.0" },
 ];
