@@ -15,7 +15,7 @@ export default function Achievements() {
         <div className="mt-14 grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {achievements.map((item, i) => (
             <Reveal key={item.label} delay={i * 0.06}>
-              <div className="h-full rounded-2xl border border-border bg-surface/60 p-6 sm:p-8 text-center hover:border-border-strong transition-colors">
+              <div className="card-surface card-surface-hover h-full rounded-2xl border border-border bg-surface/60 p-6 sm:p-8 text-center hover:border-border-strong transition-colors">
                 <p className="font-display text-3xl sm:text-4xl font-semibold gradient-text">
                   {item.value}
                 </p>
@@ -27,7 +27,7 @@ export default function Achievements() {
 
         <div className="mt-10 grid sm:grid-cols-2 gap-4 sm:gap-6">
           <Reveal delay={0.3}>
-            <div className="relative rounded-2xl border border-border-strong overflow-hidden">
+            <div className="card-surface relative rounded-2xl border border-border-strong overflow-hidden">
               <img
                 src="/images/community-event.png"
                 alt="Algorand Build Station Kolkata — full community turnout"
@@ -42,7 +42,7 @@ export default function Achievements() {
             </div>
           </Reveal>
           <Reveal delay={0.36}>
-            <div className="relative rounded-2xl border border-border-strong overflow-hidden">
+            <div className="card-surface relative rounded-2xl border border-border-strong overflow-hidden">
               <img
                 src="/images/community-session.png"
                 alt="Rise In Web3 coding session with the developer community"

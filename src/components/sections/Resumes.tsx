@@ -16,7 +16,7 @@ export default function Resumes() {
         <div className="mt-14 grid sm:grid-cols-2 gap-6">
           {resumes.map((resume, i) => (
             <Reveal key={resume.file} delay={i * 0.1}>
-              <div className="h-full flex flex-col justify-between rounded-2xl border border-border bg-surface/60 p-7 hover:border-cyan/40 transition-colors group">
+              <div className="card-surface card-surface-hover h-full flex flex-col justify-between rounded-2xl border border-border bg-surface/60 p-7 hover:border-cyan/40 transition-colors group">
                 <div>
                   <div className="grid place-items-center h-11 w-11 rounded-xl border border-cyan/25 bg-cyan/10 text-cyan">
                     <FileText size={20} />

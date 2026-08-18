@@ -38,7 +38,7 @@ export default function About() {
           <div className="space-y-6">
             {facets.map((facet, i) => (
               <Reveal key={facet.title} delay={i * 0.1}>
-                <div className="flex gap-4 rounded-2xl border border-border bg-surface/60 p-6 hover:border-border-strong transition-colors">
+                <div className="card-surface card-surface-hover flex gap-4 rounded-2xl border border-border bg-surface/60 p-6 hover:border-border-strong transition-colors">
                   <div
                     className={`shrink-0 grid place-items-center h-11 w-11 rounded-xl border ${
                       toneClasses[facet.tone]
@@ -60,19 +60,19 @@ export default function About() {
 
             <Reveal delay={0.2}>
               <p className="text-muted leading-relaxed">
-                I maintain{" "}
-                <span className="text-ink font-medium">70+ public repositories</span>{" "}
-                and have published an npm SDK used across 8+ EVM networks. Whether
-                I'm at a keyboard shipping code or on stage onboarding the next
-                cohort of builders, the goal is the same: make the ecosystem
-                easier to build in.
+                I've shipped agentic infrastructure and full-stack platforms across{" "}
+                <span className="text-ink font-medium">five different chains</span> —
+                Arbitrum, Stellar, Solana, Algorand, and Injective — and published an
+                npm SDK used across 8+ EVM networks. Whether I'm at a keyboard shipping
+                code or on stage onboarding the next cohort of builders, the goal is
+                the same: make the ecosystem easier to build in.
               </p>
             </Reveal>
           </div>
 
           <Reveal delay={0.15} className="relative">
             <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-violet/15 via-transparent to-cyan/15 blur-2xl" />
-            <div className="relative rounded-2xl border border-border-strong overflow-hidden bg-surface">
+            <div className="card-surface relative rounded-2xl border border-border-strong overflow-hidden bg-surface">
               <img
                 src="/images/community-group.png"
                 alt="Rohan Kumar with the developer community at a Web3 event"

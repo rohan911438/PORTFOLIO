@@ -87,7 +87,7 @@ export default function Header() {
             </a>
             <a
               href="#contact"
-              className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-cyan via-indigo to-violet px-4 py-2 text-sm font-semibold text-bg hover:opacity-90 transition-opacity"
+              className="btn-glow inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-cyan via-indigo to-violet px-4 py-2 text-sm font-semibold text-bg hover:opacity-90 transition-opacity"
             >
               Get In Touch
             </a>

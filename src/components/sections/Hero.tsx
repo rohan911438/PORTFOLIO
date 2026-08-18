@@ -89,7 +89,7 @@ export default function Hero() {
             >
               <a
                 href="#projects"
-                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-cyan via-indigo to-violet px-5 py-3 text-sm font-semibold text-bg hover:opacity-90 transition-opacity"
+                className="btn-glow inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-cyan via-indigo to-violet px-5 py-3 text-sm font-semibold text-bg hover:opacity-90 transition-opacity"
               >
                 View My Work
                 <ArrowRight size={16} />
@@ -139,7 +139,7 @@ export default function Hero() {
             className="relative mx-auto w-full max-w-sm"
           >
             <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-br from-cyan/30 via-indigo/20 to-violet/30 blur-2xl" />
-            <div className="relative rounded-[1.75rem] border border-border-strong bg-surface overflow-hidden">
+            <div className="card-surface relative rounded-[1.75rem] border border-border-strong bg-surface overflow-hidden">
               <img
                 src="/images/profile.png"
                 alt="Portrait of Rohan Kumar"

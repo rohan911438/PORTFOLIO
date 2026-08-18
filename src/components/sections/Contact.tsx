@@ -75,7 +75,7 @@ export default function Contact() {
           <Reveal className="space-y-6">
             <a
               href={`mailto:${contactInfo.email}`}
-              className="flex items-center gap-4 rounded-2xl border border-border bg-surface/60 p-5 hover:border-cyan/40 transition-colors"
+              className="card-surface card-surface-hover flex items-center gap-4 rounded-2xl border border-border bg-surface/60 p-5 hover:border-cyan/40 transition-colors"
             >
               <span className="grid place-items-center h-11 w-11 shrink-0 rounded-xl border border-cyan/25 bg-cyan/10 text-cyan">
                 <Mail size={18} />
@@ -88,7 +88,7 @@ export default function Contact() {
 
             <a
               href={`tel:${contactInfo.phone.replace(/\s+/g, "")}`}
-              className="flex items-center gap-4 rounded-2xl border border-border bg-surface/60 p-5 hover:border-cyan/40 transition-colors"
+              className="card-surface card-surface-hover flex items-center gap-4 rounded-2xl border border-border bg-surface/60 p-5 hover:border-cyan/40 transition-colors"
             >
               <span className="grid place-items-center h-11 w-11 shrink-0 rounded-xl border border-cyan/25 bg-cyan/10 text-cyan">
                 <Phone size={18} />
@@ -99,7 +99,7 @@ export default function Contact() {
               </div>
             </a>
 
-            <div className="flex items-center gap-4 rounded-2xl border border-border bg-surface/60 p-5">
+            <div className="card-surface flex items-center gap-4 rounded-2xl border border-border bg-surface/60 p-5">
               <span className="grid place-items-center h-11 w-11 shrink-0 rounded-xl border border-violet/25 bg-violet/10 text-violet">
                 <MapPin size={18} />
               </span>
@@ -129,7 +129,7 @@ export default function Contact() {
             <form
               onSubmit={handleSubmit}
               noValidate
-              className="rounded-2xl border border-border bg-surface/60 p-6 sm:p-8"
+              className="card-surface rounded-2xl border border-border bg-surface/60 p-6 sm:p-8"
             >
               <div className="grid sm:grid-cols-2 gap-5">
                 <div>
@@ -202,7 +202,7 @@ export default function Contact() {
                 <button
                   type="submit"
                   disabled={status === "sending"}
-                  className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-cyan via-indigo to-violet px-5 py-2.5 text-sm font-semibold text-bg hover:opacity-90 transition-opacity disabled:opacity-60"
+                  className="btn-glow inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-cyan via-indigo to-violet px-5 py-2.5 text-sm font-semibold text-bg hover:opacity-90 transition-opacity disabled:opacity-60"
                 >
                   <Send size={15} />
                   {status === "sending" ? "Opening your email client…" : "Send Message"}

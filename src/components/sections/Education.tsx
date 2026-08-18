@@ -12,7 +12,7 @@ export default function Education() {
         <div className="mt-14 grid gap-4 sm:grid-cols-3">
           {education.map((item, i) => (
             <Reveal key={item.degree} delay={i * 0.08}>
-              <div className="h-full rounded-2xl border border-border bg-surface/60 p-6 hover:border-border-strong transition-colors">
+              <div className="card-surface card-surface-hover h-full rounded-2xl border border-border bg-surface/60 p-6 hover:border-border-strong transition-colors">
                 <div className="grid place-items-center h-10 w-10 rounded-xl border border-cyan/25 bg-cyan/10 text-cyan mb-4">
                   <GraduationCap size={18} />
                 </div>
